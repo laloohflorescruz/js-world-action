@@ -1,0 +1,16 @@
+name: 'Hello World EEFC'
+description: 'Hello World action'
+inputs:
+  who-to-greet: # id of input
+    description: 'The person to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The greeting to say'
+runs:
+   using: 'node20'
+   main: 'index.js'
+branding:
+  icon: 'message-circle'
+  color: 'yellow'
